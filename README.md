@@ -26,5 +26,6 @@ npx playwright test
 ## Notes about the Tests
 
 - I created a very basic set of tests in order to not spend an overly large amount of time. For test cases that I would have liked to implement but did not, I added skipped tests to the spec files with descriptions of what they would do.
+- There are some basic graphql api tests as well. In order to not take a lot of time, I opted to use Playwright to interact with the api. This is not ideal but for the purposes of this assessement, it works well enough.
 - Currently, the tests are only set to run in Chromium. This can be changed in the `playwright.config.ts` file if you wish to do so. I did try to have at least two browsers running at once but I encountered random test errors. My guess is that I was trying to make my system do too much as once. Tests running in parallel albeit with just one browser appears to be stable.
 - The tests are not running in headless mode for demonstration purposes. Again, this can be changed in the config file.
