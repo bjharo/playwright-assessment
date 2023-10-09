@@ -41,6 +41,8 @@ test('schedule appt with same shipping and billing address', async ({ page, requ
   await selectTimePage.selectTimeSlot(timeslot.startTimeDataId);
 
   await expect(pendingApptPage.pendingApptProvider, 'The pending appointment page did not display the proper provider name.').toHaveText(timeslot.provider);
+  await expect(pendingApptPage.pendingApptDate, '').toHaveText(timeslot.startTime.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' }));
+  await expect(pendingApptPage.pendingApptTime, '').toHaveText(timeslot.startTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' }));
 
   await pendingApptPage.continue.click();
   await contactDetailsPage.firstName.fill(firstName);
