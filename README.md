@@ -1,6 +1,6 @@
 # Henry Meds Assessment
 
-This repo contains a small demo of using Playwright to test a small dev site. This language used in Typescript.
+This repo contains a small demo of using Playwright to test a small dev site. This language used is Typescript.
 
 ## Requirements
 
