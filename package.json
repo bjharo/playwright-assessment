@@ -1,0 +1,19 @@
+{
+  "name": "henrymedsassessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "@playwright/test": "^1.38.1",
+    "@types/chai": "^4.3.6",
+    "@types/node": "^20.8.3",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "should": "^13.2.3"
+  }
+}
